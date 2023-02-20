@@ -1,19 +1,24 @@
 from turtle import Turtle, Screen
-from random import randint
+import random
 
-tim = Turtle()
+# Screen
 screen = Screen()
 screen.colormode(255)
 
-for n in range(3, 11):
-    tim.color(randint(0, 255),
-              randint(0, 255),
-              randint(0, 255))
+# Turtle
+tim = Turtle()
+tim.width(10)
+tim.speed("fastest")
 
-    for _ in range(n):
-        tim.forward(50)
-        tim.left(360/n)
+directions = [0, 90, 270, 360]
 
+for _ in range(200):
+    tim.color(random.randint(0, 255),
+              random.randint(0, 255),
+              random.randint(0, 255))
+
+    tim.forward(10)
+    tim.setheading(random.choice(directions))
 
 
 
