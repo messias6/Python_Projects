@@ -1,12 +1,9 @@
-from turtle import Turtle, Screen
+import turtle
 import random
 
-# Screen
-screen = Screen()
-screen.colormode(255)
-
+turtle.colormode(255)
 # Turtle
-tim = Turtle()
+tim = turtle.Turtle()
 tim.width(10)
 tim.speed("fastest")
 
@@ -27,5 +24,5 @@ for _ in range(200):
 
 
 
-
+screen = turtle.Screen()
 screen.exitonclick()
