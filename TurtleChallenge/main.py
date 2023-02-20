@@ -4,19 +4,15 @@ import random
 turtle.colormode(255)
 # Turtle
 tim = turtle.Turtle()
-tim.width(10)
+tim.width(2)
 tim.speed("fastest")
 
-directions = [0, 90, 270, 360]
-
-for _ in range(200):
+for n in range(0,360,5):
     tim.color(random.randint(0, 255),
               random.randint(0, 255),
               random.randint(0, 255))
-
-    tim.forward(10)
-    tim.setheading(random.choice(directions))
-
+    tim.setheading(n)
+    tim.circle(100)
 
 
 
